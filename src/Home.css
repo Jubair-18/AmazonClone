@@ -1,0 +1,40 @@
+        .home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: fit-content;
+        }
+        
+        .home__row {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 0;
+            z-index: 1;
+            align-items: flex-end;
+        }
+        
+        .home__product {
+            list-style: none;
+            flex: 0 0 33.333333%;
+        }
+        
+        .home__image {
+            width: 100%;
+            z-index: 1;
+            margin-bottom: -150px;
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))
+        }
+        /***** RESPONSIVE ****/
+        
+        @media screen and (max-width: 700px) {
+            .home {
+                position: absolute;
+            }
+            .home__product {
+                margin-top: 5px;
+                list-style: none;
+                flex: 1;
+                width: fit-content;
+                height: 100px;
+            }
+        }
